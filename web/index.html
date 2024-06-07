@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>H</text></svg>">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>harichselvamc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: white;
+      }
+      header {
+        width: 100%;
+        height: 75px;
+        background: rgb(239, 240, 241);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .right a {
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        margin: 0 15px;
+      }
+      .right a:hover {
+        border-bottom: 0.5mm solid rgb(100, 100, 100);
+      }
+      a.primary {
+        background: rgb(8, 119, 229);
+        color: white;
+        padding: 7px 20px;
+        border-radius: 5mm;
+      }
+      a.primary:hover {
+        background: rgb(4, 101, 199);
+      }
+      .hero {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 5%;
+        box-sizing: border-box;
+      }
+      .hero-left {
+        flex-grow: 1;
+      }
+      .title {
+        font-size: 50px;
+        line-height: 60px;
+        margin: 20px 0;
+      }
+      .caption {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+      }
+      .links a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        border: 0.5mm solid rgb(200, 200, 200);
+        border-radius: 5mm;
+        padding: 7px 20px;
+      }
+      .links a.primary {
+        color: white;
+        border: none;
+        margin-right: 20px;
+      }
+      .hero-right img {
+        width: 370px;
+        border-radius: 10mm;
+        
+      }
+      .content {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        padding: 20px 5%;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 80%;
+        background: rgb(232, 240, 254);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 5mm;
+        padding: 30px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      .box-left,
+      .box-right {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 10px;
+        display: grid;
+        place-items: center;
+      }
+      .box-left img {
+        width: 300px;
+        border-radius: 5mm;
+      }
+      .box-right {
+        color: rgb(40, 42, 45);
+      }
+      .box-title {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .box-description {
+        font-size: 14px;
+        text-align: justify;
+      }
+      footer {
+        width: 100%;
+        background: rgb(245, 245, 245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 20px;
+        box-sizing: border-box;
+      }
+      footer img {
+        height: 30px;
+        margin-right: 30px;
+      }
+      .footer-left {
+        display: flex;
+        align-items: center;
+      }
+      footer a,
+      .footer-right {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(119, 134, 99);
+        margin: 0 10px;
+      }
+      @media only screen and (max-width: 1000px) {
+        .title {
+          font-size: 5vw;
+        }
+        .hero-right img {
+          width: 35vw;
+        }
+        .caption {
+          font-size: 1.4vw;
+        }
+        .links a {
+          font-size: 1.5vw;
+          padding: 0.6vw 1.65vw;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .title {
+          font-size: 45px;
+          text-align: center;
+        }
+        .hero-right {
+          display: none;
+        }
+        .caption {
+          font-size: 14px;
+        }
+        .links a {
+          font-size: 14px;
+          padding: 7px 20px;
+        }
+        .hero-left {
+          display: grid;
+          place-items: center;
+        }
+        .links {
+          justify-content: center;
+        }
+        header {
+          padding: 16px 10px;
+        }
+        header .right a {
+          margin: 0 10px;
+          font-size: 12px;
+        }
+        .header .logo {
+          width: 80px;
+        }
+        .box-left img {
+          width: 200px;
+        }
+        .box-title {
+          font-size: 30px;
+        }
+        footer {
+          flex-direction: column;
+        }
+      }
+      .logo a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">harichselvamc</a>
+      </div>
+      <div class="right">
+        <a href="#">Home</a>
+        <a href="https://www.linkedin.com/in/harichselvamc/" class="primary">Connect</a>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-left">
+        <div class="title">
+          <div class="line">Idea into</div>
+          <div class="line">Code & Design</div>
+        </div>
+        <div class="caption">Insights, Responsive Web, AI/ML Solutions</div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/harichselvamc/" class="primary">Connect</a>
+          <a href="https://github.com/harichselvamc">Explore</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="logo.jpeg" alt="Profile Image" />
+      </div>
+    </div>
+    <div class="content">
+      <div class="box">
+        <div class="box-left">
+          <img src="hari.jpg" alt="Profile Image" />
+        </div>
+        <div class="box-right">
+          <div class="box-title">harichselvam</div>
+          <div class="box-description">
+            <strong>Email:</strong> harichselvamc@gmail.com<br />
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harichselvamc" style="text-decoration: none;color: black;">linkedin.com/in/harichselvamc</a><br />
+            <strong>Phone:</strong> +91 7598068106<br />
+            <strong>GitHub:</strong> <a href="https://github.com/harichselvamc" style="text-decoration: none;color: black;">github.com/harichselvamc</a><br />
+            <strong>Location:</strong> Chennai, India<br />
+            <strong>Website:</strong> <a href="https://iamharichselvam.web.app" style="text-decoration: none;color: black;">iamharichselvam.web.app</a><br />
+            <strong>Objective:</strong><br />
+            I am a current student at the Dr. MGR Educational and Research Institute, specializing in Computer Science and Engineering. I am keen to obtain work experience and have a thorough grasp of my field, honed my analytical and research abilities, and developed strong communication and problem-solving skills.
+          </div>
+        </div>
+      </div>
+
+    <div class="box">
+  <div class="box-right">
+    <div class="box-title">Experience</div>
+    <div class="box-description">
+      <strong>Python Backend Developer | Murven Solutions</strong><br />
+      <em>June 2023 – August 2023</em><br />
+      Developed an image processing API using FastAPI, implementing GAN concepts to enhance capabilities. Worked on a Ubuntu AWS machine, gaining experience in cloud computing and advanced image processing techniques.<br />
+      <strong>Techstack:</strong> Python, FastAPI, GAN, AWS, Ubuntu<br />
+    </div>
+  </div>
+</div>
+
+
+      <div class="box">
+        <div class="box-right">
+          <div class="box-title">Skills</div>
+          <div class="box-description">
+            <strong>Languages:</strong> Python, HTML, CSS, JavaScript, SQL<br />
+            <strong>Frameworks & Libraries:</strong> Streamlit, NumPy, Pandas, Matplotlib, Scikit-learn, FastAPI<br />
+            <strong>Tools:</strong> Git, Jupyter Notebook, PyCharm, AWS<br />
+            <strong>Soft Skills:</strong> Analytical Skills, Problem Solving, Communication<br />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
